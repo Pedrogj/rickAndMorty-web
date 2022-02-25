@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  min-height: 100vh; /*importante*/
-  position: relative; /*importante*/
+  padding-top: 25px;
+  padding-bottom: 25px;
   display: grid;
   grid-template-columns: 50% 50%;
 
@@ -18,6 +18,7 @@ export const Content = styled.div`
   display: grid;
   justify-self: center;
   align-items: center;
+  padding-top: 15px;
 
   @media (max-width: 900px) {
     padding: 10px;

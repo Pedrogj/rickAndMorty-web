@@ -1,15 +1,25 @@
 import styled from "styled-components";
 
 export const Content = styled.div`
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  align-items: center;
+  /*  display: flex;
   flex-wrap: wrap;
-  max-width: 1920px;
+  justify-content: center; */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  padding: 40px 0;
+  width: 76%;
+  gap: 20px;
 
   @media (min-width: 700px) {
     padding: 1.5rem;
+  }
+
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 `;
 
@@ -19,7 +29,7 @@ export const Box = styled.div`
   height: 220px;
   overflow: hidden;
   border-radius: 0.5rem;
-  margin: 0.75rem;
+  //margin: 0.75rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   @media (max-width: 700px) {

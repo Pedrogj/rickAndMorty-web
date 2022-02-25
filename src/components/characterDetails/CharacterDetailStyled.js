@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  min-height: 100vh; /*importante*/
+  min-height: 70vh; /*importante*/
   position: relative; /*importante*/
   display: flex;
   -webkit-box-pack: center;

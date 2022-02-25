@@ -76,7 +76,7 @@ export const NavMenu = styled.ul`
     left: ${({ click }) => (click ? 0 : "-100%")};
     flex-direction: column;
     transition: 0.5s all ease-in;
-    background-color: #ffe6e6;
+    background-color: #ededed;
   }
 `;
 
@@ -88,8 +88,8 @@ export const NavItem = styled.li`
   text-decoration: none;
 
   &:hover {
-    background-color: #ffe6e6;
-    border-bottom: 2px solid #f00946;
+    background-color: #ededed;
+    border-bottom: 2px solid #262626;
     transition: 0.4s ease-in;
   }
 
