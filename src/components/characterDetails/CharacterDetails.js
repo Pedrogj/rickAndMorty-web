@@ -1,5 +1,5 @@
 import React from "react";
-import { gql, useQuery } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import { useParams, useNavigate } from "react-router-dom";
 import { Spinner } from "../spinner/Spinner";
 import {
@@ -11,20 +11,7 @@ import {
   Text1,
   Text2,
 } from "./CharacterDetailStyled";
-
-const GET_CHARACTER = gql`
-  query getCharacter($id: ID!) {
-    character(id: $id) {
-      id
-      name
-      status
-      species
-      gender
-      image
-      created
-    }
-  }
-`;
+import { GET_CHARACTER } from "../../helpers/getData";
 
 export const CharacterDetails = () => {
   const { characterId } = useParams();

@@ -1,5 +1,5 @@
 import React from "react";
-import { gql, useQuery } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import { Link, useParams } from "react-router-dom";
 import { Spinner } from "../spinner/Spinner";
 import {
@@ -13,22 +13,7 @@ import {
   Text,
   Button,
 } from "./EpisodeDetailsStyled";
-
-const GET_EPISODE = gql`
-  query GetEpisodeID($id: ID!) {
-    episode(id: $id) {
-      id
-      name
-      characters {
-        id
-        name
-        image
-        status
-        species
-      }
-    }
-  }
-`;
+import { GET_EPISODE } from "../../helpers/getData";
 
 export const EpisodeDetails = () => {
   const { episodeId } = useParams();

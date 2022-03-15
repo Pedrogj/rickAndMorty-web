@@ -16,8 +16,11 @@ export const AppRouter = () => {
         <Route path="/" element={<HomeScreen />} />
         <Route path="characters" element={<CharactersScreen />} />
         <Route path="character/:characterId" element={<CharacterDetails />} />
+
         <Route path="episodes" element={<EpisodesScreen />} />
         <Route path="episode/:episodeId" element={<EpisodeDetails />} />
+
+        <Route path="*" element={<HomeScreen />} />
       </Routes>
       <Footer />
     </>
